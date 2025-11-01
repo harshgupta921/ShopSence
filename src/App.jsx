@@ -4,7 +4,6 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useAuth } from "./contexts/AuthContext";
 import MainLayout from "./components/MainLayout";
-import ShopPage from "./components/Shop";
 
 const HomePage = lazy(() => import("./pages/HomePage"));
 const ProductDetailPage = lazy(() => import("./pages/ProductDetail"));
