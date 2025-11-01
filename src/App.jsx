@@ -2,19 +2,19 @@ import React, { Suspense, lazy } from "react";
 import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useAuth } from "./contexts/AuthContext";
-import MainLayout from "./components/MainLayout";
+import { useAuth } from "./contexts/AuthContext.jsx";
+import MainLayout from "./components/MainLayout.jsx";
 
-const HomePage = lazy(() => import("./pages/HomePage"));
-const ProductDetailPage = lazy(() => import("./pages/ProductDetail"));
-const CartPage = lazy(() => import("./pages/CartPage"));
-const LoginPage = lazy(() => import("./Pages/LoginPage"));
-const RegisterPage = lazy(() => import("./Pages/RegisterPage"));
-const NotFoundPage = lazy(() => import("./Pages/NotFoundPage"));
-const ContactPage = lazy(()=> import("./Pages/ContactPage"));
-const ProfilePage = lazy(()=> import ("./Pages/ProfilePage"));
-const CheckoutPage = lazy(()=> import ("./Pages/CheckoutPage"));
-const ShopComponent = lazy(()=> import ("./components/Shop"));
+const HomePage = lazy(() => import("./pages/HomePage.jsx"));
+const ProductDetailPage = lazy(() => import("./pages/ProductDetail.jsx"));
+const CartPage = lazy(() => import("./pages/CartPage.jsx"));
+const LoginPage = lazy(() => import("./Pages/LoginPage.jsx"));
+const RegisterPage = lazy(() => import("./Pages/RegisterPage.jsx"));
+const NotFoundPage = lazy(() => import("./Pages/NotFoundPage.jsx"));
+const ContactPage = lazy(()=> import("./Pages/ContactPage.jsx"));
+const ProfilePage = lazy(()=> import ("./Pages/ProfilePage.jsx"));
+const CheckoutPage = lazy(()=> import ("./Pages/CheckoutPage.jsx"));
+const ShopComponent = lazy(()=> import ("./components/Shop.jsx"));
 // ✅ ProtectedRoute component
 function ProtectedRoute({ children }) {
   const { user, loading } = useAuth();
