@@ -8,12 +8,12 @@ import MainLayout from "./components/MainLayout.jsx";
 const HomePage = lazy(() => import("./pages/HomePage.jsx"));
 const ProductDetailPage = lazy(() => import("./pages/ProductDetail.jsx"));
 const CartPage = lazy(() => import("./pages/CartPage.jsx"));
-const LoginPage = lazy(() => import("./Pages/LoginPage.jsx"));
-const RegisterPage = lazy(() => import("./Pages/RegisterPage.jsx"));
-const NotFoundPage = lazy(() => import("./Pages/NotFoundPage.jsx"));
-const ContactPage = lazy(()=> import("./Pages/ContactPage.jsx"));
-const ProfilePage = lazy(()=> import ("./Pages/ProfilePage.jsx"));
-const CheckoutPage = lazy(()=> import ("./Pages/CheckoutPage.jsx"));
+const LoginPage = lazy(() => import("./pages/LoginPage.jsx"));
+const RegisterPage = lazy(() => import("./pages/RegisterPage.jsx"));
+const NotFoundPage = lazy(() => import("./pages/NotFoundPage.jsx"));
+const ContactPage = lazy(()=> import("./pages/ContactPage.jsx"));
+const ProfilePage = lazy(()=> import ("./pages/ProfilePage.jsx"));
+const CheckoutPage = lazy(()=> import ("./pages/CheckoutPage.jsx"));
 const ShopComponent = lazy(()=> import ("./components/Shop.jsx"));
 // ✅ ProtectedRoute component
 function ProtectedRoute({ children }) {
