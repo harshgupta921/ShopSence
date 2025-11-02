@@ -149,6 +149,7 @@ const RegisterPage = () => {
 
       await axios.post(`${server}/api/v1/users/register`, formDataObj, {
         headers: { 'Content-Type': 'multipart/form-data' },
+        withCredentials : true,
       });
 
       setSuccess(true);
